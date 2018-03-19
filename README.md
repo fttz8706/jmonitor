@@ -1,2 +1,2 @@
 # jmonitor
-基于JMX的java监控工具
+基于JMX的jvm监控工具
