@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="jmonitor-logger" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${user.home}/logs/monitor/jmonitor.log</file>
+        <append>true</append>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${user.home}/logs/monitor/jmonitor.log.%d{yyyy-MM-dd}</FileNamePattern>
+            <MaxHistory>7</MaxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %msg%n</pattern>
+            <charset class="java.nio.charset.Charset">UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <logger name="jmonitor-logger" level="INFO" additivity="false">
+        <appender-ref ref="jmonitor-logger"/>
+    </logger>
+
+</configuration>

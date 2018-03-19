@@ -1,0 +1,25 @@
+# Created by .ignore support plugin (hsz.mobi)
+# Eclipse
+.classpath
+.project
+.settings/
+.m2/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+out/
+
+# Mac
+.DS_Store
+.localized
+
+# Maven
+target/
+
+# other
+log/
+.svn/
+*.imp
+*.crc
