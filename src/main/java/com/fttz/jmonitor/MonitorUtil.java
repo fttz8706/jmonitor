@@ -2,6 +2,7 @@ package com.fttz.jmonitor;
 
 import com.fttz.jmonitor.jvm.GCInfo;
 import com.fttz.jmonitor.jvm.MemoryInfo;
+import com.fttz.jmonitor.jvm.ThreadInfo;
 import org.slf4j.ILoggerFactory;
 import org.slf4j.Logger;
 
@@ -10,7 +11,6 @@ import javax.management.ObjectName;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.lang.management.ManagementFactory;
-import java.lang.management.ThreadInfo;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
